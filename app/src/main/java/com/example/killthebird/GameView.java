@@ -7,6 +7,8 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -102,7 +104,7 @@ public class GameView extends SurfaceView implements Runnable {
         }
 
     }
-
+  
     private void update () {
 
         background1.x -= 10 * screenRatioX;
